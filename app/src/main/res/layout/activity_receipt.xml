@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/_20sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/receipt"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/purple_500"
+        android:fontFamily="@font/avenir_next_ltpro_demi" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/receipt_list"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/sales_tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/purple_500"
+        android:fontFamily="@font/avenir_next_ltpro_demi" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/purple_500"
+        android:fontFamily="@font/avenir_next_ltpro_demi" />
+
+</LinearLayout>
